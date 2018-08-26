@@ -28,9 +28,9 @@ class ViewController: UIViewController {
 //愛要說粗乃
         var speechUtterance = AVSpeechUtterance()
         let synthesizer = AVSpeechSynthesizer()
-        if sender.value >= 0.9 {
+        if sender.value >= 0.85 {
             speechUtterance = AVSpeechUtterance(string: "Wait for me,dear")
-            speechUtterance.pitchMultiplier = 0.3
+            speechUtterance.pitchMultiplier = 0.2
             synthesizer.speak(speechUtterance)
 //君子愛財取之有道？
         if sender.value == 1.0 {
